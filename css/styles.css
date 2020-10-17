@@ -2,9 +2,20 @@
 /*вторичный текст  #757575*/
 /*белый #FFFFFF*/
 /*акцент #2196F3*/
+/*секондари #2196F3*/
+
+:root {
+  --primary-text-color: #757575;
+  --titlt-text-color: #212121;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
+  --secondary-color: #f5f4fa;
+}
+
+/*разметка страницы*/
 .page {
   background-color: #ffffff;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .logo {
@@ -14,7 +25,7 @@
 
 .logo :hover,
 .logo :focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .list {
@@ -23,44 +34,79 @@
 
 /*оформление текста*/
 .section {
-  color: #212121;
+  color: var(--titlt-text-color);
 }
 
 .title {
-  color: rgba(117, 117, 117, 0.6);
+  color: var(--primary-text-color);
 }
 
 /*site nav*/
 
 .site-nav a {
-  color: #212121;
+  color: var(--titlt-text-color);
 }
 
 .site-nav :hover,
 .site-nav :focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 .auth-nav a {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .auth-nav :hover,
 .auth-nav :focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
-/*section banner*/
+.baner-section {
+  background-color: #2f303a;
+}
 
 .baner {
-  background-color: #2f303a;
-  color: #ffffff;
+  color: var(--white-color);
 }
-/*footer*/
 
 .footer {
   background-color: #2f303a;
 }
 
+.logo-footer {
+  color: var(--white-color);
+  font-size: 26px;
+}
+
+.logo-footer :hover,
+.logo-footer :focus {
+  color: var(--accent-color);
+}
+
 .adress {
-  color: #ffffff;
+  color: var(--white-color);
+}
+
+/*button*/
+
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+}
+.button :hover {
+  color: black;
+}
+
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.button.secondary {
+  color: var(--accent-color);
+  background-color: var(--secondary-color);
 }
