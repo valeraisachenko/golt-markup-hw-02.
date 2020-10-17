@@ -1,0 +1,66 @@
+/*цвет основного текста #212121*/
+/*вторичный текст  #757575*/
+/*белый #FFFFFF*/
+/*акцент #2196F3*/
+.page {
+  background-color: #ffffff;
+  color: #757575;
+}
+
+.logo {
+  font-size: 26px;
+  color: #212121;
+}
+
+.logo :hover,
+.logo :focus {
+  color: #2196f3;
+}
+
+.list {
+  list-style: none;
+}
+
+/*оформление текста*/
+.section {
+  color: #212121;
+}
+
+.title {
+  color: rgba(117, 117, 117, 0.6);
+}
+
+/*site nav*/
+
+.site-nav a {
+  color: #212121;
+}
+
+.site-nav :hover,
+.site-nav :focus {
+  color: #2196f3;
+}
+
+.auth-nav a {
+  color: #757575;
+}
+
+.auth-nav :hover,
+.auth-nav :focus {
+  color: #2196f3;
+}
+/*section banner*/
+
+.baner {
+  background-color: #2f303a;
+  color: #ffffff;
+}
+/*footer*/
+
+.footer {
+  background-color: #2f303a;
+}
+
+.adress {
+  color: #ffffff;
+}
