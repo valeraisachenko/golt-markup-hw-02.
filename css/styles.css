@@ -10,17 +10,24 @@
   --white-color: #ffffff;
   --accent-color: #2196f3;
   --secondary-color: #f5f4fa;
+  --button-color: #f2f2f2;
 }
 
 /*разметка страницы*/
 .page {
   background-color: #ffffff;
   color: var(--primary-text-color);
+  font-family: roboto;
 }
 
 .logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
   font-size: 26px;
   color: #212121;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 
 .logo :hover,
@@ -38,10 +45,32 @@
 }
 
 .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
+.title-work {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 /*site nav*/
+.site-nav {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-family: roboto;
+}
 
 .site-nav a {
   color: var(--titlt-text-color);
@@ -54,6 +83,41 @@
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.content {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+.name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.auth-nav {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .auth-nav a {
@@ -69,6 +133,11 @@
 }
 
 .baner {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
   color: var(--white-color);
 }
 
@@ -78,7 +147,12 @@
 
 .logo-footer {
   color: var(--white-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
   font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 
 .logo-footer :hover,
@@ -87,26 +161,33 @@
 }
 
 .adress {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
   color: var(--white-color);
 }
 
 /*button*/
 
-.button {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+.list-button {
+  list-style: none;
+}
+
+button {
+  height: 38px;
+  background: var(--button-color);
+  color: var(--titlt-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 16px;
-}
-.button :hover {
-  color: black;
+  line-height: 26px;
 }
 
-.button.primary {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-}
-
-.button.secondary {
-  color: var(--accent-color);
-  background-color: var(--secondary-color);
+button:hover,
+button :focus {
+  color: var(--button-color);
+  background: var(--accent-color);
 }
