@@ -15,12 +15,13 @@
 
 /*разметка страницы*/
 .page {
-  background-color: #ffffff;
+  background-color :var(--white-color)
   color: var(--primary-text-color);
   font-family: roboto;
 }
 
 .logo {
+  text-decoration: none;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -33,6 +34,11 @@
 .logo :hover,
 .logo :focus {
   color: var(--accent-color);
+}
+
+
+.accent {
+color: var(--accent-color);
 }
 
 .list {
@@ -59,7 +65,24 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
+}
+
+.post {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.title-post {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-text-color);
 }
 
 /*site nav*/
@@ -67,7 +90,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   font-family: roboto;
 }
@@ -81,8 +104,17 @@
   color: var(--accent-color);
 }
 
+.current {
+  text-decoration: none;
+}
+
 .site-nav .link.current {
+  text-decoration: none;
   color: var(--accent-color);
+}
+
+.info {
+  text-decoration: none;
 }
 
 .content {
@@ -134,11 +166,11 @@
 
 .baner {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
   color: var(--white-color);
+  text-align: center;
 }
 
 .footer {
@@ -146,12 +178,12 @@
 }
 
 .logo-footer {
+  text-decoration: none;
   color: var(--white-color);
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
@@ -163,10 +195,13 @@
 .adress {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: var(--white-color);
+}
+
+.adress-nav {
+  text-decoration: none;
 }
 
 /*button*/
@@ -176,14 +211,14 @@
 }
 
 button {
+  font-family: inherit;
   height: 38px;
   background: var(--button-color);
   color: var(--titlt-text-color);
   font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
 }
 
 button:hover,
