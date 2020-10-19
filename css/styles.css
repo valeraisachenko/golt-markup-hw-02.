@@ -27,7 +27,7 @@
   font-weight: bold;
   font-size: 26px;
   color: #212121;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
@@ -55,7 +55,7 @@ color: var(--accent-color);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -122,7 +122,7 @@ color: var(--accent-color);
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 }
 .name {
@@ -130,7 +130,7 @@ color: var(--accent-color);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
 }
 
 .auth-nav {
@@ -138,7 +138,7 @@ color: var(--accent-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -147,7 +147,7 @@ color: var(--accent-color);
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -168,7 +168,7 @@ color: var(--accent-color);
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   color: var(--white-color);
   text-align: center;
 }
@@ -196,12 +196,16 @@ color: var(--accent-color);
   font-family: Roboto;
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   color: var(--white-color);
 }
 
 .adress-nav {
   text-decoration: none;
+}
+
+.auth-li{
+ text-decoration: none;
 }
 
 /*button*/
