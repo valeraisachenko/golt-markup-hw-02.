@@ -13,11 +13,29 @@
   --button-color: #f2f2f2;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
 /*разметка страницы*/
 .page {
   background-color :var(--white-color)
   color: var(--primary-text-color);
   font-family: roboto;
+}
+
+.container{
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .logo {
@@ -59,6 +77,9 @@ color: var(--accent-color);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+.portfolio{
+  display: none;
+}
 
 .title-work {
   font-family: Roboto;
@@ -84,9 +105,20 @@ color: var(--accent-color);
   line-height: 1.9;
   color: var(--primary-text-color);
 }
+/*mine nav*/
 
+.main-nav{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+
+}
 /*site nav*/
+
+
 .site-nav {
+  margin-left: 93px;
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -95,8 +127,18 @@ color: var(--accent-color);
   font-family: roboto;
 }
 
+.site-nav .iten{
+  margin-right: 50px;
+}
+
+
+.site-nav .iten:last-child{
+  margin-right: 0;
+}
+
 .site-nav a {
   color: var(--titlt-text-color);
+
 }
 
 .site-nav :hover,
@@ -106,6 +148,9 @@ color: var(--accent-color);
 
 .current {
   text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link.current {
@@ -133,13 +178,23 @@ color: var(--accent-color);
   line-height: 19px;
 }
 
+
 .auth-nav {
+  margin-left: auto;
+  display: flex;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+
+.auth-nav .iten{
+  margin-right: 50px;
+}
+.auth-nav .iten:last-child{
+  margin-right: 0;
 }
 
 .description {
