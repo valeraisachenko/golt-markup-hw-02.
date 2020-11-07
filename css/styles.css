@@ -19,25 +19,22 @@ html {
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 
 /*разметка страницы*/
 
 .page {
-  background-color :var(--white-color)
-  color: var(--primary-text-color);
-  font-family: roboto;
+  background-color: var(--white-color);
 }
 
-.container{
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  
 }
 
 .logo {
@@ -56,19 +53,17 @@ html {
   color: var(--accent-color);
 }
 
-
 .accent {
-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
 
-.list-past{
+.list-past {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -76,35 +71,16 @@ color: var(--accent-color);
   margin: 0;
 }
 
-.list-past .itel{
+.list-past .itel {
   width: 370px;
   margin-right: 30px;
 }
 
-.list-past .itel:nth-child(3n){
+.list-past .itel:nth-child(3n) {
   margin-right: 0;
 }
 
-.lest-post{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 94px;
-  margin-top: ;
-}
-
-.lest-post .team{
-  width: 370px;
-  margin-right: 30px;
-}
-
-.lest-post .team:nth-child(3n){
-  margin-right: 0;
-}
-
-.list-best{
+.lest-post {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -113,28 +89,45 @@ color: var(--accent-color);
   margin-bottom: 94px;
 }
 
-.list-best .itev{
+.lest-post .team {
+  width: 370px;
   margin-right: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
 }
 
-.list-best .itev:nth-child(4n){
+.lest-post .team:nth-child(3n) {
+  margin-right: 0;
+}
+
+.list-best {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 94px;
+}
+
+.list-best .itev {
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.list-best .itev:nth-child(4n) {
   margin-right: 0;
 }
 
 /*оформление текста*/
 
-.paragraph{
+.paragraph {
   margin-top: 0;
   padding-top: 60px;
   padding-bottom: 5px;
 }
 
-
-
 .section {
-  margin-top: 94px;
+  padding-top: 94px;
   color: var(--titlt-text-color);
 }
 
@@ -147,7 +140,10 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.portfolio{
+.portfolio {
+  display: none;
+}
+.banner {
   display: none;
 }
 
@@ -178,16 +174,14 @@ border-radius: 0px 0px 4px 4px;
 }
 /*mine nav*/
 
-.main-nav{
+.main-nav {
   height: 80px;
   display: flex;
   align-items: center;
   margin-bottom: 0;
-  border: 1px solid #ECECEC;
-
 }
-/*site nav*/
 
+/*site nav*/
 
 .site-nav {
   margin-left: 93px;
@@ -200,18 +194,16 @@ border-radius: 0px 0px 4px 4px;
   font-family: roboto;
 }
 
-.site-nav .iten{
+.site-nav .iten {
   margin-right: 50px;
 }
 
-
-.site-nav .iten:last-child{
+.site-nav .iten:last-child {
   margin-right: 0;
 }
 
 .site-nav a {
   color: var(--titlt-text-color);
-
 }
 
 .site-nav :hover,
@@ -235,21 +227,17 @@ border-radius: 0px 0px 4px 4px;
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  
 }
 
-.info-footer{
+.info-footer {
   padding-top: 32px;
   padding-bottom: 32px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-}
-.auth-nav .list{
-  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
 .content {
@@ -270,7 +258,6 @@ border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 
-
 .auth-nav {
   margin-left: auto;
   display: flex;
@@ -282,10 +269,28 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.02em;
 }
 
-.auth-nav .iten{
+.auts-nav {
+  display: block;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav .iten {
   margin-right: 50px;
 }
-.auth-nav .iten:last-child{
+
+.auts-nav .iten {
+  margin-right: 50px;
+}
+
+.auth-nav .iten:last-child {
+  margin-right: 0;
+}
+
+.auts-nav .iten:last-child {
   margin-right: 0;
 }
 
@@ -303,10 +308,20 @@ border-radius: 0px 0px 4px 4px;
   color: var(--primary-text-color);
 }
 
+.auts-nav a {
+  color: var(--primary-text-color);
+}
+
 .auth-nav :hover,
 .auth-nav :focus {
   color: var(--accent-color);
 }
+
+.auts-nav :hover,
+.auts-nav :focus {
+  color: var(--accent-color);
+}
+
 .baner-section {
   background-color: #2f303a;
   height: 600px;
@@ -327,23 +342,26 @@ border-radius: 0px 0px 4px 4px;
   margin-bottom: 40px;
 }
 
-.section-title{
+.section-title {
   display: flex;
   flex-wrap: wrap;
 }
-.section-title .item{
+.section-title .item {
   width: 270px;
-   margin-right: 15px;
+  margin-right: 15px;
 }
 
-.section-title .item:nth-child(4n){
- margin-right: 0;
+.section-title .item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .footer {
   background-color: #2f303a;
   min-height: 252px;
- 
+}
+
+.iten-two {
+  margin-top: 9px;
 }
 
 .logo-footer {
@@ -356,12 +374,17 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.03em;
 }
 
+.auth-nav .list {
+  display: block;
+}
+
 .logo-footer :hover,
 .logo-footer :focus {
   color: var(--accent-color);
 }
 
 .adress {
+  padding-bottom: 9px;
   font-family: Roboto;
   font-style: normal;
   font-size: 14px;
@@ -376,29 +399,29 @@ border-radius: 0px 0px 4px 4px;
 /*button*/
 
 .list-button {
+  margin: 0;
+  margin-bottom: 25px;
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  margin: 0;
-  margin-top: 100px;
-  margin-bottom: 56px;
+  margin-left: 8px;
+  border: none;
+  justify-content: center;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
-
 button {
+  border: none;
   border-radius: 6px;
-  font-family: inherit;
-  width: 200px;
-  height: 50px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   display: block;
-  margin: auto;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin: auto;
 }
 
 button:hover,
@@ -406,5 +429,3 @@ button :focus {
   color: var(--button-color);
   background: var(--accent-color);
 }
-
-
