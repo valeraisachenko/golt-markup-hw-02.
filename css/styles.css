@@ -89,6 +89,13 @@ html {
   margin-bottom: 94px;
 }
 
+.comand {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
 .team {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
@@ -167,6 +174,7 @@ html {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
+  margin: 0;
 }
 
 .title-post {
@@ -176,15 +184,19 @@ html {
   font-size: 16px;
   line-height: 1.9;
   color: var(--primary-text-color);
+  margin: 0;
 }
 /*mine nav*/
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .main-nav {
   height: 80px;
   display: flex;
   align-items: center;
   margin-bottom: 0;
-  border-bottom: 1px solid #ececec;
 }
 
 /*site nav*/
